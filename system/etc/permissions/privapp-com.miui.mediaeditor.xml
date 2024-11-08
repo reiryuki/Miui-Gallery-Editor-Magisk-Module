@@ -1,1 +1,12 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.miui.mediaeditor">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <!-- Not added yet in AndroidManifest.xml -->
+        <permission name="android.permission.READ_DEVICE_CONFIG"/>
+        <permission name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.USE_EXACT_ALARM"/>
+    </privapp-permissions>
+</permissions>
