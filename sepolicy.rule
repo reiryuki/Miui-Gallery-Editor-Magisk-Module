@@ -6,4 +6,12 @@ create { system_lib_file vendor_file vendor_configs_file }
 allow { system_file system_lib_file vendor_file vendor_configs_file } labeledfs filesystem associate
 allow init { system_file system_lib_file vendor_file vendor_configs_file } { dir file } relabelfrom
 
+# process
+allow system_app system_app process ptrace
+allow priv_app priv_app process ptrace
+allow platform_app platform_app process ptrace
+allow untrusted_app_29 untrusted_app_29 process ptrace
+allow untrusted_app_27 untrusted_app_27 process ptrace
+allow untrusted_app untrusted_app process ptrace
+
 
