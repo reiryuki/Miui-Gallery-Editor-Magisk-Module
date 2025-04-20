@@ -39,6 +39,9 @@
 - https://t.me/ryukinotes/19
 - Global: https://t.me/ryukinotes/34
 
+## Known Issue
+- Video editor auto/templates feature doesn't work
+
 ## Support & Bug Report
 - https://t.me/ryukinotes/54
 - If you don't do above, issues will be closed immediately
