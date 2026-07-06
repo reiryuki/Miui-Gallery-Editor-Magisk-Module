@@ -5,27 +5,48 @@
 - The MIT license specified here is for the Magisk Module only, not for Miui apps.
 
 ## Descriptions
-- Gallery Editor app by Xiaomi Inc. ported and integrated as a Magisk Module for all supported and rooted devices with Magisk
+Gallery Editor app by Xiaomi Inc. ported and integrated as a Magisk Module for all supported and rooted devices with Magisk
 
 ## Sources
 - https://apkmirror.com com.miui.mediaeditor by Xiaomi Inc.
-- libmagiskpolicy.so: Kitsune Mask R6687BB53
+- libmagiskpolicy.so: Magisk (stable) 30.7 (30700)
+
+## Changelog
+
+v0.4
+- Fix video editor auto/templates (Prepare /storage/emulated/"$UID"/Android/data/com.miui.mediaeditor/files directories)
+- Update libmagiskpolicy.so from Magisk (stable) 30.7 (30700)
+- Resets module folders/files permissions at post-fs-data
+- Move _uninstall.log to /data/adb/logs/
+
+v0.3
+- Modify MiMediaEditor.apk to fix crash
+- Using ro.gallery.device and ro.gallery.manufacturer instead of ro.product.device and ro.product.manufacturer
+
+v0.2
+- Add Action button to clear app caches
+- Fix architecture detection in some weird ROMs
+- Fix bug in uninstall.sh
+- Fix selinux denials
+- Update MiGalleryEditor.apk arm64-v8a v1.10.0.0.6
+
+v0.1
+- Initial release
 
 ## Screenshots
-- https://t.me/ryukimodsscreenshots/21
+https://t.me/ryukimodsscreenshots/21
 
 ## Requirements
-- arm64-v8a is for arm64-v8a architecture only
-- The other is for arm64-v8a or armeabi-v7a architecture
-- Min30 is for SDK 30 (Android 11) and up
-- Min26 is for SDK 26 (Android 8.0) and up
-- Magisk or KernelSU installed
+Magisk or Kitsune Mask or KernelSU or Apatch installed
 
 ## Installation Guide & Download Link
+- If you are using KernelSU, you need to disable Unmount Modules by Default in KernelSU app settings and install https://github.com/KernelSU-Modules-Repo/meta-overlayfs or https://github.com/KernelSU-Modules-Repo/magic_mount_rs or https://github.com/KernelSU-Modules-Repo/hybrid_mount or https://github.com/maxsteeel/nomount first depending on ROM compatibility
 - Install Miui Core Magisk Module first if you are in non-Miui ROM: https://github.com/reiryuki/Miui-Core-Magisk-Module
 - Install Miui Gallery AI Magisk Module: https://github.com/reiryuki/Miui-Gallery-AI-Magisk-Module
-- Install this module https://www.pling.com/p/2221566/ via Magisk app or KernelSU app or Recovery if Magisk installed
-- If you are using KernelSU, you need to disable Unmount Modules by Default in KernelSU app settings
+- Download the right module according to your device architecture and Android version:
+  - arm64-v8a Minimum SDK 30:
+  - arm64-v8a or armeabi-v7a Minimum SDK 26:
+- Install the module via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
 - Reboot
 - If you are using KernelSU, you need to allow superuser list manually all package name listed in package.txt (and your home launcher app also) (enable show system apps) and reboot afterwards
 - If you are using SUList, you need to allow list manually your home launcher app (enable show system apps) and reboot afterwards
@@ -39,18 +60,15 @@
 - https://t.me/ryukinotes/19
 - Global: https://t.me/ryukinotes/34
 
-## Known Issue
-- Video editor auto/templates feature doesn't work
-
 ## Support & Bug Report
 - https://t.me/ryukinotes/54
 - If you don't do above, issues will be closed immediately
 
 ## Credits and Contributors
 - https://t.me/androidryukimodsdiscussions
-- You can contribute ideas about this Magisk Module here: https://t.me/androidappsportdevelopment
+- https://t.me/androidappsportdevelopment
 
 ## Sponsors
-- https://t.me/ryukinotes/25
+https://t.me/ryukinotes/25
 
 
