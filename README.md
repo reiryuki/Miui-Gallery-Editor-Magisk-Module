@@ -44,8 +44,8 @@ Magisk or Kitsune Mask or KernelSU or Apatch installed
 - Install Miui Core Magisk Module first if you are in non-Miui ROM: https://github.com/reiryuki/Miui-Core-Magisk-Module
 - Install Miui Gallery AI Magisk Module: https://github.com/reiryuki/Miui-Gallery-AI-Magisk-Module
 - Download the right module according to your device architecture and Android version:
-  - arm64-v8a Minimum SDK 30:
-  - arm64-v8a or armeabi-v7a Minimum SDK 26:
+  - arm64-v8a Minimum SDK 30: https://devuploads.com/5ohs1d9t1vj2
+  - arm64-v8a or armeabi-v7a Minimum SDK 26: https://devuploads.com/t9lstufybtnk
 - Install the module via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
 - Reboot
 - If you are using KernelSU, you need to allow superuser list manually all package name listed in package.txt (and your home launcher app also) (enable show system apps) and reboot afterwards
